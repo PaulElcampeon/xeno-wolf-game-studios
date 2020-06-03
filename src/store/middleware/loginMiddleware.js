@@ -9,21 +9,21 @@ export const loginMiddleware = (state) => (next) => (action) => {
         case LOGIN:
             if (credentialsChecker(action.credential)) {
                 attemptLogin(action.credential)
-                .then(res => res.json())
-                .then(data => {
-                    if (data.status && data.status !== 202) {
-                        store.dispatch(updateMessage("Something wrong happened"))                       
-                    } else {
-                        SessionManager.updateSession()
-                        store.dispatch(updateToken(data.jwt));
-                        store.dispatch(loggedInAction(true));
-                        store.dispatch(updateMessage(null))
-                    }
-                })
-                .catch(error => {
-                    console.log(error.message)
-                    store.dispatch(updateMessage("Something wrong happened"))
-                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.status && data.status !== 202) {
+                            store.dispatch(updateMessage("Something wrong happened"))
+                        } else {
+                            SessionManager.updateSession()
+                            store.dispatch(updateToken(data.jwt));
+                            store.dispatch(loggedInAction(true));
+                            store.dispatch(updateMessage(null))
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error.message)
+                        store.dispatch(updateMessage("Something wrong happened"))
+                    })
             } else {
                 store.dispatch(updateMessage("Credentials are not valid"))
             }
