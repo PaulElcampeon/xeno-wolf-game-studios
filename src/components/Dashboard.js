@@ -1,18 +1,31 @@
 import React from 'react';
-import auth from './auth';
+import { useDispatch, useSelector } from "react-redux";
+import { logoutAction } from '../store/actions';
 
 const Dashboard = (props) => {
+    const storeExtractor = useSelector(store => store);
+    const dispatch = useDispatch();
 
-    return(
+    const { loggedIn } = storeExtractor;
+
+    return (
         <div>
+            {!loggedIn && props.history.push("/")}
             <h1>This is the Dashboard</h1>
-            <button onClick={() => {
-                auth.logout(() => {
-                    props.history.push("/");
-                })
-            }}>
+            <div>
+                <div>
 
-            </button>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <button onClick={() => {
+                        dispatch(logoutAction());
+                    }}>
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }
