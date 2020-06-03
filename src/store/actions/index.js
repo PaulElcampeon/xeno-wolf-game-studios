@@ -5,11 +5,19 @@ export const UPDATE_TOKEN = 'UPDATE_TOKEN';
 export const UPDATE_MESSAGE = 'UPDATE_MESSAGE';
 export const UPDATE_PROJECTS = 'UPDATE_PROJECTS';
 export const GET_PROJECTS = 'GET_PROJECTS';
+export const LOGGING_IN = 'LOGGING_IN';
 
+
+export const loggingIn = () => {
+    return {
+        type: LOGGING_IN,
+        loggingIn: true
+    }
+}
 
 export const getProjects = () => {
     return {
-        type: GET_PROJECTS    
+        type: GET_PROJECTS
     }
 }
 
