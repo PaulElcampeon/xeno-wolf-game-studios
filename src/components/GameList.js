@@ -1,22 +1,19 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { useSelector } from "react-redux";
 import GameListItem from './GameListItem';
 
-class GameList extends Component {
-    constructor(props) {
-        super(props)
-    }
+const GameList = (props) => {
+    const storeExtractor = useSelector(state => state);
 
-    render() {
-        const {projects} = this.props;
-        console.log(projects);
-        return(
-            <div>
-                <ul>
-                    {projects.map((data, key) => <GameListItem key={key} gameData={data}/>)}
-                </ul>
-            </div>
-        )
-    }
+    const { projects } = storeExtractor;
+
+    return (
+        <div>
+            <ul>
+                {projects.map((data, key) => <GameListItem key={key} gameData={data} />)}
+            </ul>
+        </div>
+    )
 }
 
 export default GameList;

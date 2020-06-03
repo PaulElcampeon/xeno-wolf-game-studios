@@ -1,14 +1,20 @@
 import React from 'react';
 import './styles/App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { useDispatch } from "react-redux";
 import Home from './components/HomePage';
 import Navbar from './components/Navbar';
 import ProjectPage from './components/ProjectsPage';
 import Admin from './components/AdminPage';
 import Dashboard from './components/Dashboard';
 import { ProtectedRoute } from './components/ProtectedRoute';
+import { getProjects } from './store/actions';
 
 function App() {
+  
+  const dispatch = useDispatch();
+  dispatch(getProjects());
+
   return (
     <BrowserRouter>
       <div className="App">
