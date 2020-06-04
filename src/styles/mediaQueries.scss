@@ -5,6 +5,12 @@
 }
 
 @mixin small {
+    @media only screen and (max-width: 600px) {
+        @content;   
+    }
+}
+
+@mixin tiny {
     @media only screen and (max-width: 400px) {
         @content;   
     }
