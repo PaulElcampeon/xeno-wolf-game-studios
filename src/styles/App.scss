@@ -1,4 +1,7 @@
 @import "./variables";
+@import "./mediaQueries";
+@import "./navigation";
+@import "./gameList";
 
 html {
     margin: 0;
@@ -20,67 +23,4 @@ body {
     top: 50%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
-}
-
-nav {
-    background-image: $mainBackgroundColour;
-    height: 10vh;
-    border-bottom: 5px solid $navBarBottomBorderColour;
-    display: flex;
-}
-
-.company-name {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    color: $companyTitleColour;
-    margin: auto;
-}
-
-.nav-links {
-    padding-right: 2rem;
-    list-style: none;
-    display: flex;
-    width: 50%;
-    margin-top: 0;
-    height: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: auto;
-}
-
-.nav-links li {
-    
-    & :hover {
-        color:black;
-    }
-}
-
-.nav-links li a {
-    font-weight: bold;
-    color: $textColour;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-}
-
-.gameListItem {
-    border: 5px solid white;
-    padding: 1.5rem;
-    color: white;
-    display: flex;
-    margin: 1rem;
-}
-
-.gameListItem_left {
-
-}
-
-.gameListItem_right {
-    display: block;
-    padding: 2rem;
-}
-
-.gameListItem_image {
-    width: 40rem;
 }

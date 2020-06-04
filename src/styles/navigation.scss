@@ -1,0 +1,41 @@
+nav {
+    background-image: $mainBackgroundColour;
+    height: 10vh;
+    border-bottom: 5px solid $navBarBottomBorderColour;
+    display: flex;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: $companyTitleColour;
+    margin: auto;
+}
+
+.nav-links {
+    padding-right: 2rem;
+    list-style: none;
+    display: flex;
+    width: 50%;
+    margin-top: 0;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links li {
+    
+    & :hover {
+        color:black;
+    }
+}
+
+.nav-links li a {
+    font-weight: bold;
+    color: $textColour;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}

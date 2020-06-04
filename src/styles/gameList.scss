@@ -1,0 +1,38 @@
+.gameList_unorderedList {
+    padding: 0;
+}
+
+.gameListItem {
+    border: 5px solid white;
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    margin: 1rem;
+    font-size: 1.2em;
+    
+    @include medium {
+        display: block;
+        font-size: 1.1em;
+    }
+
+    @include small {
+        width: 300px;
+    }
+}
+
+.gameListItem_left {
+    flex: 2;
+}
+
+.gameListItem_right {
+    flex: 2;
+    padding: 2rem;
+
+    @include medium {
+        padding: 0rem;
+    }
+}
+
+.gameListItem_image {
+    width: 100%;
+}
