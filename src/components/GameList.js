@@ -9,7 +9,7 @@ const GameList = (props) => {
 
     return (
         <div>
-            <ul>
+            <ul className="gameList_unorderedList">
                 {projects.map((data, key) => <GameListItem key={key} gameData={data} />)}
             </ul>
         </div>
