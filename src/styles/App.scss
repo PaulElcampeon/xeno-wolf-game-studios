@@ -1,7 +1,10 @@
 @import "./variables";
 @import "./mediaQueries";
 @import "./navigation";
+@import "./imageSlider";
 @import "./gameList";
+@import "./admin";
+@import "./contact";
 
 html {
     margin: 0;
@@ -23,4 +26,60 @@ body {
     top: 50%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
+}
+
+.home-parent-div {
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    color: white;
+    width: 75%;
+
+    @include large {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.personal-info-inner {
+    flex: 1;
+    padding: 0 2em;
+}
+
+.personal-info-inner > h1 {
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.personal-info-inner > div > p {
+    text-align: left;
+    
+    @include large {
+        text-align: center;
+    }
+}
+
+.personal-info-inner > div > p > span {
+    font-weight: bold;
+}
+
+.skills-list-work-history {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+  
+    @include large {
+       width: 5%;
+    }
+}
+
+.skills-list-work-personal {
+
+    @include large {
+        text-align: left;
+     }
 }
