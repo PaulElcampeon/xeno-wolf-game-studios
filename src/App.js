@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import Home from './components/HomePage';
 import Navbar from './components/Navbar';
 import ProjectPage from './components/ProjectsPage';
+import ContactPage from './components/ContactPage';
 import Admin from './components/AdminPage';
 import Dashboard from './components/Dashboard';
 import { ProtectedRoute } from './components/ProtectedRoute';
@@ -22,6 +23,8 @@ function App() {
         <Switch>
           <Route exact path={["/", "/home"]} component={Home} />
           <Route path="/projects" component={ProjectPage} />
+          <Route path="/games" component={ProjectPage} />
+          {/* <Route path="/contact" component={ContactPage} /> */}
           <Route path="/admin" component={Admin} />
           <ProtectedRoute exact path="/admin/dashboard" component={Dashboard} />
           <ProtectedRoute exact path="/admin/dashboard/create" component={Dashboard} />
