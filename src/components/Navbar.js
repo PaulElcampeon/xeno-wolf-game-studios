@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div className="nav">
             <div className="title">
-                <p>Xeno Wolf Game Studios</p>
+                <p>Paul Oladele</p>
             </div>
             <div className="links">
                 <div>
@@ -14,6 +14,12 @@ const Navbar = () => {
                 <div>
                     <NavLink to="/projects">PROJECTS</NavLink>
                 </div>
+                <div>
+                    <NavLink to="/games">GAMES</NavLink>
+                </div>
+                {/* <div>
+                    <NavLink to="/contact">CONTACT</NavLink>
+                </div> */}
                 <div>
                     <NavLink to="/admin">ADMIN</NavLink>
                 </div>
