@@ -12,7 +12,7 @@
 
 
 export const getProjects = () => {
-    return fetch('/projects/authenticate', {
+    return fetch('/projects/paultheindiedev', {
         method: 'get',
         headers: {
             'Accept': 'application/json',
