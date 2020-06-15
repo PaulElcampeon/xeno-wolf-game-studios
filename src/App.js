@@ -22,7 +22,6 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path={["/", "/home"]} component={Home} />
-          <Route path="/projects" component={ProjectPage} />
           <Route path="/games" component={ProjectPage} />
           {/* <Route path="/contact" component={ContactPage} /> */}
           <Route path="/admin" component={Admin} />
