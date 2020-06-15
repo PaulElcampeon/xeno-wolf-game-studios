@@ -83,3 +83,27 @@ body {
         text-align: left;
      }
 }
+
+.tools_images_holder {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+
+    @include small {
+        flex-direction: column;
+    }
+}
+
+.tools_images_holder > div {
+    flex: 1;
+    margin: 2em;
+}
+
+.tools_images_holder > div > img {
+    width: 50%;
+
+    @include medium {
+        width: 55px;
+    }
+}
