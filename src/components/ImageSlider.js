@@ -1,11 +1,6 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-
-const slideImages = [
-    'https://cdn57.androidauthority.net/wp-content/uploads/2020/04/FortNite-Mobile-video-screenshot-Apps-Weekly.jpg',
-    'https://ichef.bbci.co.uk/news/1024/cpsprodpb/E909/production/_112375695_crucible976.jpg',
-    'https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2020/Games/Minecraft/MinecraftDungeons-E.jpg'
-];
+import ImageSlideItem from './ImageSlideItem';
 
 const properties = {
     duration: 5000,
@@ -19,27 +14,15 @@ const properties = {
     }
 }
 
-const ImageSlider = () => {
+const ImageSlider = (props) => {
+    
+    const { images } = props;
 
     return (
         <div className="imageSlider-parent">
             <div className="slide-container">
                 <Slide {...properties}>
-                    <div className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${slideImages[0]})` }}>
-                            {/* <span>Slide 1</span> */}
-                        </div>
-                    </div>
-                    <div className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${slideImages[1]})` }}>
-                            {/* <span>Slide 2</span> */}
-                        </div>
-                    </div>
-                    <div className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${slideImages[2]})` }}>
-                            {/* <span>Slide 3</span> */}
-                        </div>
-                    </div>
+                    {images.map((obj, key) => <ImageSlideItem key={key} image={obj.image} />)}
                 </Slide>
             </div>
         </div>

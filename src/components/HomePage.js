@@ -5,17 +5,25 @@ const herokuImageLink = "https://cdn.iconscout.com/icon/free/png-512/heroku-5-56
 const reactImageLink = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png";
 const reduxImageLink = "https://miro.medium.com/max/1200/0*U2DmhXYumRyXH6X1.png";
 const springBootImageLink = "https://dzone.com/storage/temp/12434118-spring-boot-logo.png";
-const javaImageLink = "//cdn.freebiesupply.com/logos/thumbs/2x/java-logo.png";
+const javaImageLink = "https://codehustler.org/wp-content/uploads/2012/12/java_logo.png";
 const mongodbImageLink = "https://www.pngkey.com/png/full/383-3838923_open-mongodb-icon.png";
 const unityImageLink = "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png";
 const androidImageLink = "https://cdn1.iconfinder.com/data/icons/logotypes/32/android-512.png";
 const macImageLink = "https://lh3.googleusercontent.com/proxy/eTkQ0eT_cMm_6cL2vUrsED5gQUlu3ALgVV0vF22ZqCV6B0jj5bjEQq_AAtv7hrPSPJ5UXsIWbH1oaktuLORthcTZ5DnuoG-HrAOhkl4MabJeCJxDQgeKpRmKo6BPv2q4AIoggZ8P";
 const windowImageLink = "https://seeklogo.com/images/W/windows-10-icon-logo-5BC5C69712-seeklogo.com.png";
 
+const slideImages = [
+    { image: '../../../game_img/Apparition/pic_1.png' },
+    { image: '../../../game_img/Tribeka/pic_1.png' },
+    { image: '../../../game_img/Brokul/pic_1.png' },
+    { image: '../../../game_img/Tokembu/pic_3.png' },
+    { image: '../../../game_img/Light_The_Way/pic_4.png'}
+];
+
 export const Home = () => {
     return (
         <div className="home-parent-div">
-            <ImageSlider />
+            <ImageSlider images={slideImages}/>
             <div className="personal-info">
                 <div className="personal-info-inner">
                     <h1>
@@ -76,6 +84,29 @@ export const Home = () => {
                         <li>MongoDB for the database</li>
                         <li>Heroku to deploy the application</li>
                     </ul>
+                </div>
+            </div>
+            <div className="tools_images_holder">
+                <div>
+                    <img src={herokuImageLink} alt=""/>
+                </div>
+                <div>
+                    <img src={reactImageLink} alt=""/>
+                </div>
+                <div>
+                    <img src={reduxImageLink} alt=""/>
+                </div>
+                <div>
+                    <img src={springBootImageLink} alt=""/>
+                </div>
+                <div>
+                    <img src={javaImageLink} alt=""/>
+                </div>
+                <div>
+                    <img src={mongodbImageLink} alt=""/>
+                </div>
+                <div>
+                    <img src={unityImageLink} alt=""/>
                 </div>
             </div>
             {/* <img className="comp-logo" src="./wolf logo.png" alt="xeno-wolf-logo" /> */}

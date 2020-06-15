@@ -12,14 +12,8 @@ const Navbar = () => {
                     <NavLink to="/">HOME</NavLink>
                 </div>
                 <div>
-                    <NavLink to="/projects">PROJECTS</NavLink>
-                </div>
-                <div>
                     <NavLink to="/games">GAMES</NavLink>
                 </div>
-                {/* <div>
-                    <NavLink to="/contact">CONTACT</NavLink>
-                </div> */}
                 <div>
                     <NavLink to="/admin">ADMIN</NavLink>
                 </div>
