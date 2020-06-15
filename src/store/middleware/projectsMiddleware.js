@@ -4,23 +4,38 @@ import store from '../index';
 
 const projects =  [
     {
-        releaseInfo: "Realase: 12th of Deceomeber 2015",
-        gameImageLink: "https://techcrunch.com/wp-content/uploads/2018/07/fortnite03.jpg?w=730&crop=1", 
-        gameInfo: "adauhudahwduoawhdoad widohaiowdjiao wadwojpdadjo wda asadsdasda sdasdasd sad asdasdad ssas dasd sd asdasdada dasdasdasdadad asdasdasd asdas dasdasd asdasdasd asdas dasd asdasdasd ads asdasdas dasdasd asdasdasdasd asdasdadas daas asdas das dasdas dasd asdasdasd asdasdasdasdasd asd asdasdasdasdasd dsasdas dasd asdasdwdawdwada awdawd dwada wad", 
+        title: "Apparition",
+        releaseInfo: "Realase: 16th of May 2020",
+        gameImages: [{image : "../../../game_img/Apparition/pic_1.png"}, {image : "../../../game_img/Apparition/pic_2.png"}, {image : "../../../game_img/Apparition/pic_3.png"}, {image : "../../../game_img/Apparition/pic_4.png"}, {image : "../../../game_img/Apparition/pic_5.png"}, {image : "../../../game_img/Apparition/pic_6.png"}, {image : "../../../game_img/Apparition/pic_7.png"}],
+        gameInfo: "Apparition is a 2D puzzle platformer that had its intial conception and development, during The Global Game Jam which is held every year between 29th - 31st of January. This was first game I worked on as a programmer using the Unity Engine and ignited a passion for game development. I worked on this game with a group of 8 other indivduals, illustrators, animators, sound engineers, project managers, level designers and other programmers. \nGhosts always have unfinished business. For Hector, he feels he needs to make things right with his family before he can move on, having hurt each of them in small ways before his untimely and unexpected passing. You play as Hector’s apparition, working to reconcile with each member of your family in the hopes of moving on to the afterlife. But be careful! If your family sees you possessing and moving objects, they will become fearful and call a priest to exorcise you!", 
         downloadLink:""
     },
     {
-    
-        releaseInfo: "Realase: 12th of Deceomeber 2015",
-        gameImageLink: "https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2020/Games/Minecraft/MinecraftDungeons-E.jpg", 
-        gameInfo: "adauhudahwduoawhdoad widohaiowdjiao wadwojpdadjo wda asadsdasda sdasdasd sad asdasdad ssas dasd sd asdasdada dasdasdasdadad asdasdasd asdas dasdasd asdasdasd asdas dasd asdasdasd ads asdasdas dasdasd asdasdasdasd asdasdadas daas asdas das dasdas dasd asdasdasd asdasdasdasdasd asd asdasdasdasdasd dsasdas dasd asdasdwdawdwada awdawd dwada wad", 
+        title: "Light The Way",
+        releaseInfo: "Realase: 10th of May 2020",
+        gameImages: [{image :"../../../game_img/Light_The_Way/pic_4.png"}, {image : "../../../game_img/Light_The_Way/pic_1.png"}, {image : "../../../game_img/Light_The_Way/pic_2.png"}, {image : "../../../game_img/Light_The_Way/pic_3.png"}],
+        gameInfo: "Light The Way is a 2D puzzle platform with the main goal of the game being to get the player to the pace of refuge. The player is able to reach the refuge by traversing the platforms however the play is only able to see a small radius of what is around them. The player has to throw lights into the in order to light the path before them so they dont make a mistake and fall to their doom. The player also has to be on the lookout for the enemies that lurk in the shadow that move ever so close to you with each second.", 
+        downloadLink:"https://paultheindiedev.itch.io/light-the-way"
+    },
+    {
+        title: "Tribeka",
+        releaseInfo: "Realase: 2nd of June 2020",
+        gameImages: [{image :"../../../game_img/Tribeka/pic_1.png"}, {image : "../../../game_img/Tribeka/pic_2.png"}],
+        gameInfo: "Tribeka is a 2D puzzle game, with the main goal of the game being to get from the entrance to the exit of the level without being hit be the lazers attached to the enemy patrols. The levels are randomly generated with few constraints on level generation", 
         downloadLink:""
     },
     {
-    
-        releaseInfo: "Realase: 12th of Deceomeber 2015",
-        gameImageLink: "https://ichef.bbci.co.uk/images/ic/1280xn/p085csfc.png", 
-        gameInfo: "adauhudahwduoawhdoad widohaiowdjiao wadwojpdadjo wda asadsdasda sdasdasd sad asdasdad ssas dasd sd asdasdada dasdasdasdadad asdasdasd asdas dasdasd asdasdasd asdas dasd asdasdasd ads asdasdas dasdasd asdasdasdasd asdasdadas daas asdas das dasdas dasd asdasdasd asdasdasdasdasd asd asdasdasdasdasd dsasdas dasd asdasdwdawdwada awdawd dwada wad", 
+        title: "Brokul",
+        releaseInfo: "Realase: 29th of May 2020",
+        gameImages: [{image : "../../../game_img/Brokul/pic_1.png"}, {image : "../../../game_img/Brokul/pic_2.png"}, {image : "../../../game_img/Brokul/pic_3.png"}, {image : "../../../game_img/Brokul/pic_4.png"}],
+        gameInfo: "Brokul is a 2D puzzle game, with the main goal to get your little one (white square) to the yellow square, which can be reached by you, the player creating the path for your little one, by click on the squares to make them dissapear underneath yorur little one. The levels are randomly generated and there is always a solution for each level as a breadth first search is used verify that each generated level has a possible solution.", 
+        downloadLink:""
+    },
+    {
+        title: "Tokembu",
+        releaseInfo: "Realase: 22nd of May 2020",
+        gameImages: [{image :"../../../game_img/Tokembu/pic_3.png"}, {image : "../../../game_img/Tokembu/pic_1.png"}, {image : "../../../game_img/Tokembu/pic_2.png"}, {image : "../../../game_img/Tokembu/pic_4.png"}],
+        gameInfo: "Tokembu is a 2D puzzle game with the main goal being to get the correct coloured balls into their corresponding sockets. The levels are randomly generated with ablls having varying speeds which helps create the challnege as the difficulty increases.", 
         downloadLink:""
     }
 ]
