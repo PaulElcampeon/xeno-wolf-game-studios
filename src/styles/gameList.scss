@@ -3,12 +3,12 @@
 }
 
 .gameListItem {
-    border: 5px solid white;
-    padding: 1.5rem;
+    border: 3px solid white;
+    padding: 1em;
     color: white;
     display: flex;
-    margin: 1rem;
-    font-size: 1.2em;
+    margin: 1em;
+    font-size: 1.25em;
     
     @include medium {
         display: block;
@@ -27,16 +27,17 @@
 .gameListItem_left > p > span {
     font-weight: bold;
     font-size: 1.5em;
+    margin-right: 0.5em;
 }
 
 .gameListItem_right {
     flex: 3;
-    padding: 3rem;
+    padding: 2.5em;
 
     @include medium {
         display: flex;
         flex-direction: column;
-        padding: 0rem;
+        padding: 0em;
     }
 }
 
@@ -47,7 +48,7 @@
 .gameListBtn {
     background-color: white;
     color: grey;
-    padding: 1rem;
+    padding: 1em;
 
 
     &:hover {

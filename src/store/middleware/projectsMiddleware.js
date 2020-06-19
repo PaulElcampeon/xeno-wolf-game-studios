@@ -12,7 +12,7 @@ const projects =  [
     },
     {
         title: "Deriko Delta",
-        releaseInfo: "Realase: 18th of Jun 2020",
+        releaseInfo: "Realase: 18th of June 2020",
         gameImages: [{image : "../../../game_img/Deriko_Delta/pic_1.png"}, {image : "../../../game_img/Deriko_Delta/pic_2.png"}, {image : "../../../game_img/Deriko_Delta/pic_3.png"}],
         gameInfo: "Deriko Delta is a 2D top down survivor strategy game with the main aim of protecting your core from being destroyed by the waves of enemies. If you manage to get upto the 20th wave and neutralize the enemies without your core being destroyed, then you would have successfully completed the game.", 
         downloadLink:"https://paultheindiedev.itch.io/deriko-delta"
