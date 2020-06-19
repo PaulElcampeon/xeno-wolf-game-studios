@@ -9,7 +9,7 @@ const GameListItem = (props) => {
     console.log(gameInfo)
 
     const handleClick = (e) => {
-        //fetch api for download link
+        window.location.href = downloadLink
     }
 
     return (
@@ -20,7 +20,7 @@ const GameListItem = (props) => {
             </div>
             <div className="gameListItem_right">
                 <p>{gameInfo}</p>
-                <button onClick={() => { this.handleClick() }}> DOWNLOAD </button>
+                <button className="gameListBtn" onClick={() => { handleClick() }}> DOWNLOAD </button>
             </div>
         </div>
     )

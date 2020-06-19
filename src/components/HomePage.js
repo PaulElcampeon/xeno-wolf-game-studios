@@ -17,7 +17,10 @@ const slideImages = [
     { image: '../../../game_img/Tribeka/pic_1.png' },
     { image: '../../../game_img/Brokul/pic_1.png' },
     { image: '../../../game_img/Tokembu/pic_3.png' },
-    { image: '../../../game_img/Light_The_Way/pic_4.png'}
+    { image: '../../../game_img/Light_The_Way/pic_4.png'},
+    { image: '../../../game_img/Deriko_Delta/pic_2.png'},
+    { image: '../../../game_img/Stimps_Rage/pic_1.png'}
+
 ];
 
 export const Home = () => {
