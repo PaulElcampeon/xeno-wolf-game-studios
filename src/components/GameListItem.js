@@ -7,8 +7,9 @@ const GameListItem = (props) => {
     console.log(releaseInfo)
     console.log(gameImages)
     console.log(gameInfo)
+    console.log(downloadLink)
 
-    const handleClick = (e) => {
+    const handleClick = (downloadLink, e) => {
         window.location.href = downloadLink
     }
 
@@ -20,7 +21,8 @@ const GameListItem = (props) => {
             </div>
             <div className="gameListItem_right">
                 <p>{gameInfo}</p>
-                <button className="gameListBtn" onClick={() => { handleClick() }}> DOWNLOAD </button>
+                {downloadLink[0].link!==""? <button className="gameListBtn windowBtn" onClick={(e) => { handleClick(downloadLink[0].link, e) }}> DOWNLOAD WINDOW </button> :"" }
+                {downloadLink[1].link!==""? <button className="gameListBtn macBtn" onClick={(e) => { handleClick(downloadLink[1].link, e) }}> DOWNLOAD MAC </button> :"" }
             </div>
         </div>
     )
