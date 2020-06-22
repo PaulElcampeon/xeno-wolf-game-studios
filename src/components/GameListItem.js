@@ -24,7 +24,7 @@ const GameListItem = (props) => {
                         {downloadLink[1].link !== "" ? <button className="gameListBtn macBtn" onClick={(e) => { handleClick(downloadLink[1].link, e) }}> DOWNLOAD MAC </button> : ""}
                     </div> */}
                     <div>
-                        {itchioLink !== "" ? <input className="itchBtn" type="image" alt="itchBtn" src="../itchicon.png" onClick={(e) => { handleClick(itchioLink) }} /> : ""}
+                        {itchioLink !== "" ? <input className="itchBtn" type="image" alt="itchBtn" src="/images/itchicon.png" onClick={(e) => { handleClick(itchioLink) }} /> : ""}
                     </div>
                 </div>
 
