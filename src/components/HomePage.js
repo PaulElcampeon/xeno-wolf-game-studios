@@ -77,7 +77,7 @@ export const Home = () => {
                         Technologies
                     </h1>
                     <p>
-                        Technolgies used to create this website:
+                        Technologies used to create this website:
                     </p>
                     <ul className="skills-list-personal">
                         <li>React for the UI</li>
@@ -89,7 +89,7 @@ export const Home = () => {
                     </ul>
                 </div>
             </div>
-            <div className="tools_images_holder">
+            {/* <div className="tools_images_holder">
                 <div>
                     <img src={herokuImageLink} alt=""/>
                 </div>
@@ -111,8 +111,7 @@ export const Home = () => {
                 <div>
                     <img src={unityImageLink} alt=""/>
                 </div>
-            </div>
-            {/* <img className="comp-logo" src="./wolf logo.png" alt="xeno-wolf-logo" /> */}
+            </div> */}
         </div >
     )
 }
