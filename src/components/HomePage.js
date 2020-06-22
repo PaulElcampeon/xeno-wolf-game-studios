@@ -60,6 +60,13 @@ export const Home = () => {
                         </p>
 
                         <p>
+                           For version control we used <span>Git</span> and for tracking and managing our work we used <span>Jira</span>.
+                        </p>
+
+                        <p>
+                          We used <span>Jira</span> to track and manage our work and used <span>Scrumban</span> as a way of working for the team.
+                        </p>
+                        <p>
                             During the period of my apprenticeship I worked on both the back-end and front-end used systems and was able to gain experience using the following technologies:
                         </p>
                         <ul className="skills-list-work-history">
@@ -77,7 +84,7 @@ export const Home = () => {
                         Technologies
                     </h1>
                     <p>
-                        Technologies used to create this website:
+                        Technologies used to create and deploy this website:
                     </p>
                     <ul className="skills-list-personal">
                         <li>React for the UI</li>
