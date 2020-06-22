@@ -24,6 +24,16 @@
     flex: 2;
 }
 
+.gameListItem_left > p  {
+    @include largex1 {
+        font-size: 0.7em;
+    }
+
+    @include medium {
+        font-size: 1em;
+    }
+}
+
 .gameListItem_left > p > span {
     font-weight: bold;
     font-size: 1.5em;
@@ -49,7 +59,8 @@
     background-color: white;
     color: grey;
     padding: 1em;
-    width: 130px;
+    width: 100%;
+    height:70px;
 
     &:hover {
         background-color: grey;
@@ -58,14 +69,36 @@
 
     @include medium {
         margin: auto;
-        width: 150px;
     }
 }
 
-.macBtn {
-    margin-left: 2em;
+.itchBtn {
+    cursor:pointer;
+    width: 100%;
+    height: 70px;
+
+    @include medium {
+        margin: auto;
+    }
 }
 
-.windowBtn {
+.gameListBtnHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
+    
+    @include small {
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+
+.gameListBtnHolder > div {
+    width: 150px;
+
+    @include small {
+        margin: 1em 0 1em 0;
+    }
 }

@@ -2,15 +2,16 @@ import React from 'react';
 
 const GameListItem = (props) => {
     const { gameData } = props;
-    const { releaseInfo, gameImages, gameInfo, downloadLink, title } = gameData;
+    const { releaseInfo, gameImages, gameInfo, downloadLink, title, itchioLink } = gameData;
 
     console.log(releaseInfo)
     console.log(gameImages)
     console.log(gameInfo)
     console.log(downloadLink)
+    console.log(itchioLink)
 
-    const handleClick = (downloadLink, e) => {
-        window.location.href = downloadLink
+    const handleClick = (link, e) => {
+        window.location.href = link
     }
 
     return (
@@ -21,11 +22,23 @@ const GameListItem = (props) => {
             </div>
             <div className="gameListItem_right">
                 <p>{gameInfo}</p>
-                {downloadLink[0].link!==""? <button className="gameListBtn windowBtn" onClick={(e) => { handleClick(downloadLink[0].link, e) }}> DOWNLOAD WINDOW </button> :"" }
-                {downloadLink[1].link!==""? <button className="gameListBtn macBtn" onClick={(e) => { handleClick(downloadLink[1].link, e) }}> DOWNLOAD MAC </button> :"" }
+                <div className="gameListBtnHolder">
+                    <div>
+                    {downloadLink[0].link !== "" ? <button className="gameListBtn windowBtn" onClick={(e) => { handleClick(downloadLink[0].link, e) }}> DOWNLOAD WINDOW </button> : ""}
+                    </div>
+                    <div>
+                    {downloadLink[1].link !== "" ? <button className="gameListBtn macBtn" onClick={(e) => { handleClick(downloadLink[1].link, e) }}> DOWNLOAD MAC </button> : ""}
+                    </div>
+                    <div>
+                    {/* {itchioLink!==""? <button className="itchBtn"   width="15" onClick={(e) => {handleClick(itchioLink)}}></button> : ""} */}
+                    {itchioLink !== "" ? <input className="itchBtn" type="image" alt="itchBtn" src="../../itchicon.png" onClick={(e) => { handleClick(itchioLink) }} /> : ""}
+                    </div>
+                </div>
+
             </div>
         </div>
     )
 }
 
 export default GameListItem;
+//{<input className="itchBtn" type="image" alt="itchBtn" src="../../itchicon.png" onClick={(e) => {handleClick(itchioLink)}}/> : ""}

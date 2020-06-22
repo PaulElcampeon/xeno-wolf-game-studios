@@ -1,3 +1,17 @@
+
+@mixin largex2 {
+    @media only screen and (min-width: 1400px) {
+        @content;   
+    }
+}
+
+@mixin largex1 {
+    @media only screen and (max-width: 1400px) {
+        @content;   
+    }
+}
+
+
 @mixin large {
     @media only screen and (max-width: 1300px) {
         @content;   

@@ -46,21 +46,21 @@ export const Home = () => {
                     </h1>
                     <div>
                         <p>
-                            I started work in the web develpment field in June 2018 as a technical apprentice for Gamesys Group which is an online software development and gaming business, till June 2020 when my contract ended.
+                            I started work in the web develpment field in June 2018 as a technical apprentice for Gamesys Group which is an online software development and gaming business, till June 2020 when my apprenticeship ended.
                         </p>
                         <p>
                             I was part of the Poker team and our main goal was to develop and maintain the Poker product.
                             </p>
                         <p>
-                            The poker teams front end is built using difference technologies, the lobby is built
-                        using <span>React</span> and the poker table is built using <span>PixiJS</span>.
+                            The poker product front end was built using different technologies, the lobby was built
+                        using <span>React</span> and the poker table was built using <span>PixiJS</span>.
                         </p>
                         <p>
                             Our backend systems were built in <span>Java</span> using the <span>Spring framework</span>. We used <span> ActiveMQ</span> as our message broker.
                         </p>
 
                         <p>
-                            During that period of time I used technologies such as:
+                            During the period of my apprenticeship I worked on both the back-end and front-end used systems and was able to gain experience using the following technologies:
                         </p>
                         <ul className="skills-list-work-history">
                             <li>React</li>
