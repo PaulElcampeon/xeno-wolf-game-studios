@@ -17,14 +17,14 @@ const GameListItem = (props) => {
             <div className="gameListItem_right">
                 <p>{gameInfo}</p>
                 <div className="gameListBtnHolder">
-                    <div>
+                    {/* <div>
                         {downloadLink[0].link !== "" ? <button className="gameListBtn windowBtn" onClick={(e) => { handleClick(downloadLink[0].link, e) }}> DOWNLOAD WINDOW </button> : ""}
                     </div>
                     <div>
                         {downloadLink[1].link !== "" ? <button className="gameListBtn macBtn" onClick={(e) => { handleClick(downloadLink[1].link, e) }}> DOWNLOAD MAC </button> : ""}
-                    </div>
+                    </div> */}
                     <div>
-                        {itchioLink !== "" ? <input className="itchBtn" type="image" alt="itchBtn" src="../../itchicon.png" onClick={(e) => { handleClick(itchioLink) }} /> : ""}
+                        {itchioLink !== "" ? <input className="itchBtn" type="image" alt="itchBtn" src="../itchicon.png" onClick={(e) => { handleClick(itchioLink) }} /> : ""}
                     </div>
                 </div>
 
